@@ -1,0 +1,22 @@
+{
+  "name": "pipe",
+  "version": "1.0.0",
+  "description": "Build pipe",
+  "main": "./dist/index.js",
+  "bin": {
+    "pipe": "./bin/pipe",
+    "pipe-ls": "./bin/pipe-ls"
+  },
+  "scripts": {
+    "prepare": "lsc -cp ./src/index.ls > dist/index.js"
+  },
+  "author": "Fredrik Andersson",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "livescript": "^1.6.0"
+  },
+  "dependencies": {
+    "async": "^3.2.0",
+    "prelude-ls": "^1.2.1"
+  }
+}
