@@ -59,6 +59,7 @@ exec-command = (pass, file, done) -->
 
   else
     cmd = type.cmd
+      .replace(/{{out-file}}/g, file.out-file)
       .replace(/{{out-path}}/g, file.out-path)
       .replace(/{{in-file}}/g, file.in-file)
 
